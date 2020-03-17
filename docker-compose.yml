@@ -1,0 +1,8 @@
+version: '2.3'
+services:
+  helloworld:
+    image: nginx
+    volumes:
+      - './html:/usr/share/nginx/html:ro'
+    ports:
+      - '80:80'
